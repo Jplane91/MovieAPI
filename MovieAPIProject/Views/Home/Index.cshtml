@@ -1,0 +1,49 @@
+
+<h1>WELCOME TO THE GRAND CIRCUS MOVIE DATABASE</h1>
+
+
+
+<form asp-action="Details" asp-controller="Home">
+
+    Search By Movie Id: <input type="text" name="id" value"" />
+    <input type="submit" value="Search" />
+
+</form>
+<form asp-action="SearchResult" asp-controller="Home" class="align-content-center">
+
+    Search By Movie Title: <input type="text" name="query" value"" />
+    <input type="submit" value="Search" />
+
+</form>
+<a href="/Home/GetFavoritesMovieList">
+    <input type="submit"  value="List Favorites" />
+</a>
+<style>
+    body {
+        background-image: url('../../movieBackground2.jpg');
+        background-size: cover;
+    }
+
+    h1 {
+        color: white;
+        font-weight: bolder;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+        word-wrap: break-word;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 100px;
+        text-shadow: 2px 2px black;
+        text-align: center;
+    }
+
+    form{
+        color:white;
+    }
+
+  input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+</style> 
